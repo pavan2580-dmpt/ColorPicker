@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color:#ff99df;
+    width: 100%;
+    height: 100vh;
+background-image:
+radial-gradient(at 81% 57%, hsla(30,64%,63%,1) 0px, transparent 50%),
+radial-gradient(at 88% 29%, hsla(0,70%,77%,1) 0px, transparent 50%),
+radial-gradient(at 17% 88%, hsla(35,77%,62%,1) 0px, transparent 50%),
+radial-gradient(at 44% 56%, hsla(341,68%,63%,1) 0px, transparent 50%),
+radial-gradient(at 76% 43%, hsla(19,95%,65%,1) 0px, transparent 50%),
+radial-gradient(at 31% 66%, hsla(223,73%,63%,1) 0px, transparent 50%),
+radial-gradient(at 20% 91%, hsla(320,90%,71%,1) 0px, transparent 50%);
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  .wrapper {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+    max-width: 400px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0.5em;
+    padding: 1.5em;
+    border-radius: 0.8em;
+  }
+  img {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .btns-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 1em 0 1.5em 0;
+  }
+  input,
+  label,
+  button {
+    border: none;
+    outline: none;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  label,
+  button {
+    display: block;
+    font-size: 1.1em;
+    background: transparent;
+    border: 1px solid;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.8em 0;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #result {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  #result div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #result input {
+    background-color: transparent;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    color: #313b4c;
+    border-bottom: 0.1em solid #37022b;
+  }
+  #result button {
+    position: absolute;
+    right: 0.6em;
+    background-color: transparent;
+    color: #7c8696;
+  }
+  #picked-color-ref {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    border: 0.6em solid #d9e8ff;
+    border-radius: 0.5em;
+  }
+  #custom-alert {
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: center;
+    background-color: #d9e8ff;
+    color: #025bee;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 1.5em;
+  }
+  .hide {
+    display: none;
+  }
+  #error {
+    color: #ff725a;
+    text-align: center;
+  }
